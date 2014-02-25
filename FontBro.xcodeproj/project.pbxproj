@@ -18,6 +18,8 @@
 		09D26A7318BC03E800590E59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A5218BC03E800590E59 /* Cocoa.framework */; };
 		09D26A7B18BC03E800590E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A7918BC03E800590E59 /* InfoPlist.strings */; };
 		09D26A7D18BC03E800590E59 /* FontBroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A7C18BC03E800590E59 /* FontBroTests.m */; };
+		09D26A8818BC53BD00590E59 /* FBFontListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A8718BC53BD00590E59 /* FBFontListViewController.m */; };
+		09D26A8A18BC545C00590E59 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A8918BC545C00590E59 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		09D26A7818BC03E800590E59 /* FontBroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontBroTests-Info.plist"; sourceTree = "<group>"; };
 		09D26A7A18BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09D26A7C18BC03E800590E59 /* FontBroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontBroTests.m; sourceTree = "<group>"; };
+		09D26A8618BC53BD00590E59 /* FBFontListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFontListViewController.h; sourceTree = "<group>"; };
+		09D26A8718BC53BD00590E59 /* FBFontListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFontListViewController.m; sourceTree = "<group>"; };
+		09D26A8918BC545C00590E59 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D26A8A18BC545C00590E59 /* CoreText.framework in Frameworks */,
 				09D26A5318BC03E800590E59 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		09D26A5118BC03E800590E59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09D26A8918BC545C00590E59 /* CoreText.framework */,
 				09D26A5218BC03E800590E59 /* Cocoa.framework */,
 				09D26A7118BC03E800590E59 /* XCTest.framework */,
 				09D26A5418BC03E800590E59 /* Other Frameworks */,
@@ -120,6 +127,8 @@
 				09D26A6718BC03E800590E59 /* MainMenu.xib */,
 				09D26A6A18BC03E800590E59 /* Images.xcassets */,
 				09D26A5918BC03E800590E59 /* Supporting Files */,
+				09D26A8618BC53BD00590E59 /* FBFontListViewController.h */,
+				09D26A8718BC53BD00590E59 /* FBFontListViewController.m */,
 			);
 			path = FontBro;
 			sourceTree = "<group>";
@@ -254,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D26A6618BC03E800590E59 /* FBAppDelegate.m in Sources */,
+				09D26A8818BC53BD00590E59 /* FBFontListViewController.m in Sources */,
 				09D26A5F18BC03E800590E59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
