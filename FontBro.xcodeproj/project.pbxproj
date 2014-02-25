@@ -20,6 +20,7 @@
 		09D26A7D18BC03E800590E59 /* FontBroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A7C18BC03E800590E59 /* FontBroTests.m */; };
 		09D26A8818BC53BD00590E59 /* FBFontListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A8718BC53BD00590E59 /* FBFontListViewController.m */; };
 		09D26A8A18BC545C00590E59 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A8918BC545C00590E59 /* CoreText.framework */; };
+		09D26A8E18BC972300590E59 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A8D18BC972300590E59 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		09D26A8618BC53BD00590E59 /* FBFontListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFontListViewController.h; sourceTree = "<group>"; };
 		09D26A8718BC53BD00590E59 /* FBFontListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFontListViewController.m; sourceTree = "<group>"; };
 		09D26A8918BC545C00590E59 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		09D26A8D18BC972300590E59 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		09D26A5918BC03E800590E59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09D26A8D18BC972300590E59 /* icon.png */,
 				09D26A5A18BC03E800590E59 /* FontBro-Info.plist */,
 				09D26A5B18BC03E800590E59 /* InfoPlist.strings */,
 				09D26A5E18BC03E800590E59 /* main.m */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D26A5D18BC03E800590E59 /* InfoPlist.strings in Resources */,
+				09D26A8E18BC972300590E59 /* icon.png in Resources */,
 				09D26A6B18BC03E800590E59 /* Images.xcassets in Resources */,
 				09D26A6318BC03E800590E59 /* Credits.rtf in Resources */,
 				09D26A6918BC03E800590E59 /* MainMenu.xib in Resources */,
