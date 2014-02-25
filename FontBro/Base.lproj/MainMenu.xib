@@ -656,13 +656,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <searchField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-Re-0Gp">
-                        <rect key="frame" x="431" y="438" width="269" height="22"/>
+                        <rect key="frame" x="20" y="438" width="332" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="Xvf-mp-YQ7">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="332" id="52v-wj-eRY"/>
+                        </constraints>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search Fonts" usesSingleLineMode="YES" bezelStyle="round" id="Xvf-mp-YQ7">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </searchFieldCell>
+                        <connections>
+                            <binding destination="1DU-cj-hkO" name="predicate" keyPath="filterPredicate" id="sKM-Xo-t1e">
+                                <dictionary key="options">
+                                    <string key="NSDisplayName">predicate</string>
+                                    <string key="NSPredicateFormat">family contains $value</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </searchField>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="66" horizontalPageScroll="10" verticalLineScroll="66" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-dN-VmM">
                         <rect key="frame" x="20" y="72" width="680" height="358"/>
@@ -690,10 +701,18 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
+                                            <connections>
+                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.displayValue" id="YJ4-Kf-4Bl"/>
+                                            </connections>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <outlet property="dataSource" destination="Dg2-GV-MSo" id="WLm-ZZ-3N4"/>
+                                        <binding destination="1DU-cj-hkO" name="content" keyPath="arrangedObjects" id="gr4-Zt-1jm">
+                                            <dictionary key="options">
+                                                <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
+                                            </dictionary>
+                                        </binding>
+                                        <outlet property="dataSource" destination="1DU-cj-hkO" id="g0a-xG-vtH"/>
                                         <outlet property="delegate" destination="Dg2-GV-MSo" id="sWe-qN-vxo"/>
                                     </connections>
                                 </tableView>
@@ -739,7 +758,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="cud-eu-Dm9"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="The quick brown fox jumped over the lazy dog. " drawsBackground="YES" id="mRN-Gu-c7F">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="The quick brown fox jumped over the lazy dog. " drawsBackground="YES" id="mRN-Gu-c7F">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -785,11 +804,11 @@
                     <constraint firstAttribute="trailing" secondItem="5HJ-rj-CkD" secondAttribute="trailing" constant="239" id="1en-Z5-Mwg"/>
                     <constraint firstAttribute="bottom" secondItem="Wzl-OD-nUO" secondAttribute="bottom" constant="44" id="5dN-1o-1Qk"/>
                     <constraint firstItem="lOf-Oo-gpJ" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="23" id="DNl-Jq-1BZ"/>
-                    <constraint firstItem="Jth-Re-0Gp" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="431" id="Hsq-1e-Oeq"/>
-                    <constraint firstAttribute="trailing" secondItem="Jth-Re-0Gp" secondAttribute="trailing" constant="20" id="JhU-xb-PXx"/>
+                    <constraint firstItem="Jth-Re-0Gp" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="Hsq-1e-Oeq"/>
                     <constraint firstItem="5HJ-rj-CkD" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="116" id="QNf-X6-IJH"/>
                     <constraint firstAttribute="bottom" secondItem="ZT7-3U-JZA" secondAttribute="bottom" constant="42" id="ToF-7k-wGK"/>
                     <constraint firstAttribute="trailing" secondItem="Wzl-OD-nUO" secondAttribute="trailing" constant="203" id="VuA-dy-YHh"/>
+                    <constraint firstItem="Jth-Re-0Gp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="372" secondAttribute="leading" constant="20" id="bmc-rW-NOy"/>
                     <constraint firstItem="ypk-dN-VmM" firstAttribute="top" secondItem="372" secondAttribute="top" constant="50" id="brS-Yz-h5W"/>
                     <constraint firstAttribute="trailing" secondItem="ZT7-3U-JZA" secondAttribute="trailing" constant="20" id="czf-xV-Oec"/>
                     <constraint firstAttribute="trailing" secondItem="Zfz-ZS-kZv" secondAttribute="trailing" constant="120" id="jCd-8B-I9W"/>
@@ -812,9 +831,12 @@
         <viewController id="Dg2-GV-MSo" customClass="FBFontListViewController">
             <connections>
                 <outlet property="comboBox" destination="Zfz-ZS-kZv" id="gHu-1U-6Kf"/>
+                <outlet property="fonts" destination="1DU-cj-hkO" id="bVD-LC-MOV"/>
                 <outlet property="tableView" destination="Sy8-YZ-03L" id="RXA-xx-cTG"/>
                 <outlet property="view" destination="372" id="cGF-Kw-ksF"/>
             </connections>
         </viewController>
+        <arrayController objectClassName="FBFontListItem" editable="NO" selectsInsertedObjects="NO" avoidsEmptySelection="NO" id="1DU-cj-hkO"/>
+        <userDefaultsController representsSharedInstance="YES" id="FSN-yH-djO"/>
     </objects>
 </document>

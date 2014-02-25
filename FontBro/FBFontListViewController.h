@@ -12,9 +12,11 @@
 
 @property NSString *text;
 @property CGFloat pointSize;
+@property NSParagraphStyle *paragraphStyle;
 
 @property IBOutlet NSTableView *tableView;
 @property IBOutlet NSComboBox *comboBox;
+@property IBOutlet NSArrayController *fonts;
 
 - (IBAction)reload:(id)sender;
 
