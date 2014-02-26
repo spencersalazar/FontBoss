@@ -62,6 +62,7 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
 @property NSString *name;
 @property NSString *family;
 @property NSString *style;
+@property BOOL isFavorite;
 @property(weak) FBFontListViewController *viewController;
 
 @property(readonly) NSAttributedString *displayValue;
@@ -91,17 +92,13 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
 
 - (CGFloat)rowHeight
 {
-    return 40 + self.viewController.pointSize*(1 + 1.0/6.0);
+    return [self.viewController tableView:nil heightOfRow:0];
 }
 
 @end
 
 
 @interface FBFontListViewController ()
-{
-}
-
-- (NSAttributedString *)makeString:(CTFontDescriptorRef)desc;
 
 @end
 
@@ -153,33 +150,12 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
     
     CFRelease(collection);
     CFRelease(cffonts);
+    
+    [self.tableView sizeLastColumnToFit];
 }
 
 - (void)dealloc
 {
-}
-
-- (NSAttributedString *)makeString:(CTFontDescriptorRef)desc
-{
-    CFStringRef cfname = CTFontDescriptorCopyAttribute(desc, kCTFontNameAttribute);
-    CFStringRef cffamily = CTFontDescriptorCopyAttribute(desc, kCTFontFamilyNameAttribute);
-    CFStringRef cfstyle = CTFontDescriptorCopyAttribute(desc, kCTFontStyleNameAttribute);
-    
-    NSString *name = CFBridgingRelease(cfname);
-    NSString *family = CFBridgingRelease(cffamily);
-    NSString *style = CFBridgingRelease(cfstyle);
-    
-    NSFont *font = [NSFont fontWithName:name size:self.pointSize];
-
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ - %@\n", family, style]
-                                                                            attributes:[NSDictionary dictionaryWithObjectsAndKeys:_paragraphStyle, NSParagraphStyleAttributeName,
-                                                                                        nil]];
-    [str appendAttributedString:[[NSAttributedString alloc] initWithString:self.text
-                                                                attributes:[NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName,
-                                                                            _paragraphStyle, NSParagraphStyleAttributeName,
-                                                                            nil]]];
-    
-    return str;
 }
 
 #pragma mark - IBActions
@@ -189,25 +165,11 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
     [self.tableView reloadData];
 }
 
-
 #pragma mark - NSTableViewDelegate
 
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
 {
     return 40 + self.pointSize*(1 + 1.0/6.0);
 }
-
-//#pragma mark - NSTableViewDataSource
-//
-//- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
-//{
-//    return CFArrayGetCount(_fonts);
-//}
-//
-//- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
-//{
-//    CTFontDescriptorRef desc = CFArrayGetValueAtIndex(_fonts, row);
-//    return [self makeString:desc];
-//}
 
 @end

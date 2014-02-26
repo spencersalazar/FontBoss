@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090AD4B618BDF73E0093E262 /* star-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 090AD4B418BDF73E0093E262 /* star-off.png */; };
+		090AD4B718BDF73E0093E262 /* star-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 090AD4B518BDF73E0093E262 /* star-on.png */; };
 		09D26A5318BC03E800590E59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A5218BC03E800590E59 /* Cocoa.framework */; };
 		09D26A5D18BC03E800590E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A5B18BC03E800590E59 /* InfoPlist.strings */; };
 		09D26A5F18BC03E800590E59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A5E18BC03E800590E59 /* main.m */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090AD4B418BDF73E0093E262 /* star-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-off.png"; sourceTree = "<group>"; };
+		090AD4B518BDF73E0093E262 /* star-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-on.png"; sourceTree = "<group>"; };
 		09D26A4F18BC03E800590E59 /* FontBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D26A5218BC03E800590E59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		09D26A5518BC03E800590E59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +142,8 @@
 		09D26A5918BC03E800590E59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				090AD4B418BDF73E0093E262 /* star-off.png */,
+				090AD4B518BDF73E0093E262 /* star-on.png */,
 				09D26A8D18BC972300590E59 /* icon.png */,
 				09D26A5A18BC03E800590E59 /* FontBro-Info.plist */,
 				09D26A5B18BC03E800590E59 /* InfoPlist.strings */,
@@ -214,6 +220,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Spencer Salazar";
 				TargetAttributes = {
+					09D26A4E18BC03E800590E59 = {
+						DevelopmentTeam = 9GU9FHJ3JC;
+					};
 					09D26A6F18BC03E800590E59 = {
 						TestTargetID = 09D26A4E18BC03E800590E59;
 					};
@@ -246,6 +255,8 @@
 				09D26A5D18BC03E800590E59 /* InfoPlist.strings in Resources */,
 				09D26A8E18BC972300590E59 /* icon.png in Resources */,
 				09D26A6B18BC03E800590E59 /* Images.xcassets in Resources */,
+				090AD4B718BDF73E0093E262 /* star-on.png in Resources */,
+				090AD4B618BDF73E0093E262 /* star-off.png in Resources */,
 				09D26A6318BC03E800590E59 /* Credits.rtf in Resources */,
 				09D26A6918BC03E800590E59 /* MainMenu.xib in Resources */,
 			);
@@ -479,6 +490,7 @@
 				09D26A8218BC03E800590E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D26A8318BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBroTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +499,7 @@
 				09D26A8518BC03E800590E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -188,20 +188,42 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn editable="NO" width="675" minWidth="120" maxWidth="2048" id="Fqo-lU-6y9">
+                                        <tableColumn editable="NO" width="24" minWidth="24" maxWidth="24" id="Fqo-lU-6y9">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" scrollable="YES" lineBreakMode="clipping" alignment="left" title="Text Cell" allowsEditingTextAttributes="YES" id="lJL-FO-jhX">
+                                            <buttonCell key="dataCell" type="bevel" bezelStyle="regularSquare" image="star-off" imagePosition="above" alignment="center" alternateImage="star-on" imageScaling="proportionallyDown" inset="2" id="wkQ-fF-bjv">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.isFavorite" id="eg3-HT-xc7">
+                                                    <dictionary key="options">
+                                                        <bool key="NSCreatesSortDescriptor" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn editable="NO" width="641" minWidth="100" maxWidth="3.4028234663852886e+38" id="T5e-Qo-FdT">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="cH7-Hl-Qsi">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                             <connections>
-                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.displayValue" id="YJ4-Kf-4Bl"/>
+                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.displayValue" id="qaX-mk-TUk">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </tableColumn>
                                     </tableColumns>
@@ -219,7 +241,7 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="xSA-nn-LcP">
-                            <rect key="frame" x="1" y="362" width="598" height="16"/>
+                            <rect key="frame" x="1" y="341" width="678" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7V6-yR-VMS">
@@ -299,6 +321,31 @@
                             <binding destination="Dg2-GV-MSo" name="value" keyPath="self.pointSize" id="uQI-id-Wel"/>
                         </connections>
                     </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-bT-60L">
+                        <rect key="frame" x="17" y="3" width="697" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="691" id="5Fk-Rd-N4q"/>
+                            <constraint firstAttribute="height" constant="14" id="iJB-nh-3gt"/>
+                        </constraints>
+                        <textFieldCell key="cell" controlSize="small" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="right" title="0 Fonts" usesSingleLineMode="YES" id="9vF-hS-3aH">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="1DU-cj-hkO" name="displayPatternValue1" keyPath="arrangedObjects.@count" id="G0t-0j-zyd">
+                                <dictionary key="options">
+                                    <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
+                                    <string key="NSNullPlaceholder">0 Fonts</string>
+                                    <string key="NSNotApplicablePlaceholder">0 Fonts</string>
+                                    <string key="NSDisplayPattern">%{value1}@ Fonts</string>
+                                    <string key="NSMultipleValuesPlaceholder">0 Fonts</string>
+                                    <string key="NSNoSelectionPlaceholder">0 Fonts</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="ypk-dN-VmM" secondAttribute="bottom" constant="72" id="1ZK-DD-6Uq"/>
@@ -306,12 +353,14 @@
                     <constraint firstAttribute="bottom" secondItem="Wzl-OD-nUO" secondAttribute="bottom" constant="44" id="5dN-1o-1Qk"/>
                     <constraint firstItem="lOf-Oo-gpJ" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="23" id="DNl-Jq-1BZ"/>
                     <constraint firstItem="Jth-Re-0Gp" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="Hsq-1e-Oeq"/>
+                    <constraint firstAttribute="bottom" secondItem="1vl-bT-60L" secondAttribute="bottom" constant="3" id="LHn-SH-7ik"/>
                     <constraint firstItem="5HJ-rj-CkD" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="116" id="QNf-X6-IJH"/>
                     <constraint firstAttribute="bottom" secondItem="ZT7-3U-JZA" secondAttribute="bottom" constant="42" id="ToF-7k-wGK"/>
                     <constraint firstAttribute="trailing" secondItem="Wzl-OD-nUO" secondAttribute="trailing" constant="203" id="VuA-dy-YHh"/>
                     <constraint firstItem="Jth-Re-0Gp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="372" secondAttribute="leading" constant="20" id="bmc-rW-NOy"/>
                     <constraint firstItem="ypk-dN-VmM" firstAttribute="top" secondItem="372" secondAttribute="top" constant="50" id="brS-Yz-h5W"/>
                     <constraint firstAttribute="trailing" secondItem="ZT7-3U-JZA" secondAttribute="trailing" constant="20" id="czf-xV-Oec"/>
+                    <constraint firstAttribute="trailing" secondItem="1vl-bT-60L" secondAttribute="trailing" constant="9" id="h3x-HK-ywQ"/>
                     <constraint firstAttribute="trailing" secondItem="Zfz-ZS-kZv" secondAttribute="trailing" constant="120" id="jCd-8B-I9W"/>
                     <constraint firstAttribute="bottom" secondItem="5HJ-rj-CkD" secondAttribute="bottom" constant="42" id="mJx-qK-Ua8"/>
                     <constraint firstAttribute="bottom" secondItem="Zfz-ZS-kZv" secondAttribute="bottom" constant="44" id="o41-Co-MIR"/>
@@ -337,7 +386,11 @@
                 <outlet property="view" destination="372" id="cGF-Kw-ksF"/>
             </connections>
         </viewController>
-        <arrayController objectClassName="FBFontListItem" editable="NO" selectsInsertedObjects="NO" avoidsEmptySelection="NO" id="1DU-cj-hkO"/>
+        <arrayController objectClassName="FBFontListItem" selectsInsertedObjects="NO" avoidsEmptySelection="NO" id="1DU-cj-hkO"/>
         <userDefaultsController representsSharedInstance="YES" id="FSN-yH-djO"/>
     </objects>
+    <resources>
+        <image name="star-off" width="155.5096435546875" height="155.5096435546875"/>
+        <image name="star-on" width="155.5096435546875" height="156.94953918457031"/>
+    </resources>
 </document>

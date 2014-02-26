@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface FBFontListViewController : NSViewController <NSTableViewDataSource>
+@interface FBFontListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @property NSString *text;
 @property CGFloat pointSize;
