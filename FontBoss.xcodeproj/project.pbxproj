@@ -16,47 +16,29 @@
 		09D26A6618BC03E800590E59 /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A6518BC03E800590E59 /* FBAppDelegate.m */; };
 		09D26A6918BC03E800590E59 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A6718BC03E800590E59 /* MainMenu.xib */; };
 		09D26A6B18BC03E800590E59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A6A18BC03E800590E59 /* Images.xcassets */; };
-		09D26A7218BC03E800590E59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A7118BC03E800590E59 /* XCTest.framework */; };
-		09D26A7318BC03E800590E59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A5218BC03E800590E59 /* Cocoa.framework */; };
-		09D26A7B18BC03E800590E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A7918BC03E800590E59 /* InfoPlist.strings */; };
-		09D26A7D18BC03E800590E59 /* FontBroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A7C18BC03E800590E59 /* FontBroTests.m */; };
 		09D26A8818BC53BD00590E59 /* FBFontListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D26A8718BC53BD00590E59 /* FBFontListViewController.m */; };
 		09D26A8A18BC545C00590E59 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D26A8918BC545C00590E59 /* CoreText.framework */; };
 		09D26A8E18BC972300590E59 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D26A8D18BC972300590E59 /* icon.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		09D26A7418BC03E800590E59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D26A4718BC03E800590E59 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09D26A4E18BC03E800590E59;
-			remoteInfo = FontBro;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		090AD4B418BDF73E0093E262 /* star-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-off.png"; sourceTree = "<group>"; };
 		090AD4B518BDF73E0093E262 /* star-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-on.png"; sourceTree = "<group>"; };
-		09D26A4F18BC03E800590E59 /* FontBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D26A4F18BC03E800590E59 /* FontBoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D26A5218BC03E800590E59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		09D26A5518BC03E800590E59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		09D26A5618BC03E800590E59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		09D26A5718BC03E800590E59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		09D26A5A18BC03E800590E59 /* FontBro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontBro-Info.plist"; sourceTree = "<group>"; };
+		09D26A5A18BC03E800590E59 /* FontBoss-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontBoss-Info.plist"; sourceTree = "<group>"; };
 		09D26A5C18BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09D26A5E18BC03E800590E59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09D26A6018BC03E800590E59 /* FontBro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontBro-Prefix.pch"; sourceTree = "<group>"; };
+		09D26A6018BC03E800590E59 /* FontBoss-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontBoss-Prefix.pch"; sourceTree = "<group>"; };
 		09D26A6218BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		09D26A6418BC03E800590E59 /* FBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
 		09D26A6518BC03E800590E59 /* FBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
 		09D26A6818BC03E800590E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		09D26A6A18BC03E800590E59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		09D26A7018BC03E800590E59 /* FontBroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontBroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D26A7118BC03E800590E59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		09D26A7818BC03E800590E59 /* FontBroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontBroTests-Info.plist"; sourceTree = "<group>"; };
-		09D26A7A18BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09D26A7C18BC03E800590E59 /* FontBroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontBroTests.m; sourceTree = "<group>"; };
 		09D26A8618BC53BD00590E59 /* FBFontListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFontListViewController.h; sourceTree = "<group>"; };
 		09D26A8718BC53BD00590E59 /* FBFontListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFontListViewController.m; sourceTree = "<group>"; };
 		09D26A8918BC545C00590E59 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -73,23 +55,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D26A6D18BC03E800590E59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D26A7318BC03E800590E59 /* Cocoa.framework in Frameworks */,
-				09D26A7218BC03E800590E59 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		09D26A4618BC03E800590E59 = {
 			isa = PBXGroup;
 			children = (
-				09D26A5818BC03E800590E59 /* FontBro */,
-				09D26A7618BC03E800590E59 /* FontBroTests */,
+				09D26A5818BC03E800590E59 /* FontBoss */,
 				09D26A5118BC03E800590E59 /* Frameworks */,
 				09D26A5018BC03E800590E59 /* Products */,
 			);
@@ -98,8 +70,7 @@
 		09D26A5018BC03E800590E59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09D26A4F18BC03E800590E59 /* FontBro.app */,
-				09D26A7018BC03E800590E59 /* FontBroTests.xctest */,
+				09D26A4F18BC03E800590E59 /* FontBoss.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +96,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		09D26A5818BC03E800590E59 /* FontBro */ = {
+		09D26A5818BC03E800590E59 /* FontBoss */ = {
 			isa = PBXGroup;
 			children = (
 				09D26A6418BC03E800590E59 /* FBAppDelegate.h */,
@@ -136,7 +107,7 @@
 				09D26A8618BC53BD00590E59 /* FBFontListViewController.h */,
 				09D26A8718BC53BD00590E59 /* FBFontListViewController.m */,
 			);
-			path = FontBro;
+			path = FontBoss;
 			sourceTree = "<group>";
 		};
 		09D26A5918BC03E800590E59 /* Supporting Files */ = {
@@ -145,29 +116,11 @@
 				090AD4B418BDF73E0093E262 /* star-off.png */,
 				090AD4B518BDF73E0093E262 /* star-on.png */,
 				09D26A8D18BC972300590E59 /* icon.png */,
-				09D26A5A18BC03E800590E59 /* FontBro-Info.plist */,
+				09D26A5A18BC03E800590E59 /* FontBoss-Info.plist */,
 				09D26A5B18BC03E800590E59 /* InfoPlist.strings */,
 				09D26A5E18BC03E800590E59 /* main.m */,
-				09D26A6018BC03E800590E59 /* FontBro-Prefix.pch */,
+				09D26A6018BC03E800590E59 /* FontBoss-Prefix.pch */,
 				09D26A6118BC03E800590E59 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		09D26A7618BC03E800590E59 /* FontBroTests */ = {
-			isa = PBXGroup;
-			children = (
-				09D26A7C18BC03E800590E59 /* FontBroTests.m */,
-				09D26A7718BC03E800590E59 /* Supporting Files */,
-			);
-			path = FontBroTests;
-			sourceTree = "<group>";
-		};
-		09D26A7718BC03E800590E59 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				09D26A7818BC03E800590E59 /* FontBroTests-Info.plist */,
-				09D26A7918BC03E800590E59 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09D26A4E18BC03E800590E59 /* FontBro */ = {
+		09D26A4E18BC03E800590E59 /* FontBoss */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBro" */;
+			buildConfigurationList = 09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBoss" */;
 			buildPhases = (
 				09D26A4B18BC03E800590E59 /* Sources */,
 				09D26A4C18BC03E800590E59 /* Frameworks */,
@@ -187,28 +140,10 @@
 			);
 			dependencies = (
 			);
-			name = FontBro;
+			name = FontBoss;
 			productName = FontBro;
-			productReference = 09D26A4F18BC03E800590E59 /* FontBro.app */;
+			productReference = 09D26A4F18BC03E800590E59 /* FontBoss.app */;
 			productType = "com.apple.product-type.application";
-		};
-		09D26A6F18BC03E800590E59 /* FontBroTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09D26A8318BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBroTests" */;
-			buildPhases = (
-				09D26A6C18BC03E800590E59 /* Sources */,
-				09D26A6D18BC03E800590E59 /* Frameworks */,
-				09D26A6E18BC03E800590E59 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09D26A7518BC03E800590E59 /* PBXTargetDependency */,
-			);
-			name = FontBroTests;
-			productName = FontBroTests;
-			productReference = 09D26A7018BC03E800590E59 /* FontBroTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -223,12 +158,9 @@
 					09D26A4E18BC03E800590E59 = {
 						DevelopmentTeam = 9GU9FHJ3JC;
 					};
-					09D26A6F18BC03E800590E59 = {
-						TestTargetID = 09D26A4E18BC03E800590E59;
-					};
 				};
 			};
-			buildConfigurationList = 09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBro" */;
+			buildConfigurationList = 09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBoss" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,8 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09D26A4E18BC03E800590E59 /* FontBro */,
-				09D26A6F18BC03E800590E59 /* FontBroTests */,
+				09D26A4E18BC03E800590E59 /* FontBoss */,
 			);
 		};
 /* End PBXProject section */
@@ -262,14 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D26A6E18BC03E800590E59 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D26A7B18BC03E800590E59 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,23 +206,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D26A6C18BC03E800590E59 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D26A7D18BC03E800590E59 /* FontBroTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		09D26A7518BC03E800590E59 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09D26A4E18BC03E800590E59 /* FontBro */;
-			targetProxy = 09D26A7418BC03E800590E59 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09D26A5B18BC03E800590E59 /* InfoPlist.strings */ = {
@@ -324,14 +231,6 @@
 				09D26A6818BC03E800590E59 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		09D26A7918BC03E800590E59 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09D26A7A18BC03E800590E59 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,9 +310,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBro/FontBro-Prefix.pch";
-				INFOPLIST_FILE = "FontBro/FontBro-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
+				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
+				PRODUCT_NAME = FontBoss;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,57 +323,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBro/FontBro-Prefix.pch";
-				INFOPLIST_FILE = "FontBro/FontBro-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
+				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
+				PRODUCT_NAME = FontBoss;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		09D26A8418BC03E800590E59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontBro.app/Contents/MacOS/FontBro";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBro/FontBro-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FontBroTests/FontBroTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		09D26A8518BC03E800590E59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontBro.app/Contents/MacOS/FontBro";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBro/FontBro-Prefix.pch";
-				INFOPLIST_FILE = "FontBroTests/FontBroTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBro" */ = {
+		09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBoss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D26A7E18BC03E800590E59 /* Debug */,
@@ -483,20 +342,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBro" */ = {
+		09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBoss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D26A8118BC03E800590E59 /* Debug */,
 				09D26A8218BC03E800590E59 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09D26A8318BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09D26A8418BC03E800590E59 /* Debug */,
-				09D26A8518BC03E800590E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
