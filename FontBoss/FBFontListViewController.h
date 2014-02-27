@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class FBPersistenceManager;
+
 @interface FBFontListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @property NSString *text;
@@ -17,6 +19,9 @@
 @property IBOutlet NSTableView *tableView;
 @property IBOutlet NSComboBox *comboBox;
 @property IBOutlet NSArrayController *fonts;
+
+@property IBOutlet NSArrayController *fontData;
+@property IBOutlet FBPersistenceManager *persistenceManager;
 
 - (IBAction)reload:(id)sender;
 

@@ -8,6 +8,7 @@
 
 #import "FBFontListViewController.h"
 #import <CoreText/CoreText.h>
+#import "FBPersistenceManager.h"
 
 
 int rankStyle(CFStringRef style)
@@ -59,14 +60,14 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
 
 @interface FBFontListItem : NSObject
 
-@property NSString *name;
-@property NSString *family;
-@property NSString *style;
-@property BOOL isFavorite;
-@property(weak) FBFontListViewController *viewController;
+@property(nonatomic) NSString *name;
+@property(nonatomic) NSString *family;
+@property(nonatomic) NSString *style;
+@property(nonatomic) BOOL isFavorite;
+@property(nonatomic, weak) FBFontListViewController *viewController;
 
-@property(readonly) NSAttributedString *displayValue;
-@property(readonly) CGFloat rowHeight;
+@property(nonatomic, readonly) NSAttributedString *displayValue;
+@property(nonatomic, readonly) CGFloat rowHeight;
 
 //- (NSAttributedString *)displayValue;
 //- (NSString *)displayValue2;
@@ -93,6 +94,51 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
 - (CGFloat)rowHeight
 {
     return [self.viewController tableView:nil heightOfRow:0];
+}
+
+- (BOOL)isFavorite
+{
+    NSManagedObjectContext *context = self.viewController.persistenceManager.managedObjectContext;
+    NSManagedObjectModel *model = self.viewController.persistenceManager.managedObjectModel;
+    
+    NSFetchRequest *request = [model fetchRequestFromTemplateWithName:@"NameRequest"
+                                                substitutionVariables:[NSDictionary dictionaryWithObjectsAndKeys:self.name, @"NAMEVAR", nil]];
+    
+    NSArray *fetch = [context executeFetchRequest:request error:NULL];
+    
+    if([fetch count])
+    {
+        NSManagedObject *object = [fetch objectAtIndex:0];
+        return [object.isFavorite boolValue];
+    }
+    
+    return NO;
+}
+
+- (void)setIsFavorite:(BOOL)isFavorite
+{
+    NSManagedObjectContext *context = self.viewController.persistenceManager.managedObjectContext;
+    NSManagedObjectModel *model = self.viewController.persistenceManager.managedObjectModel;
+    
+    NSFetchRequest *request = [model fetchRequestFromTemplateWithName:@"NameRequest"
+                                                substitutionVariables:[NSDictionary dictionaryWithObjectsAndKeys:self.name, @"NAMEVAR", nil]];
+    
+    NSArray *fetch = [context executeFetchRequest:request error:NULL];
+    
+    if([fetch count])
+    {
+        NSManagedObject *object = [fetch objectAtIndex:0];
+        object.isFavorite = [NSNumber numberWithBool:isFavorite];
+    }
+    else
+    {
+        NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Font"
+                                                                inManagedObjectContext:context];
+        object.name = self.name;
+        object.isFavorite = [NSNumber numberWithBool:isFavorite];
+    }
+    
+    [context save:NULL];
 }
 
 @end

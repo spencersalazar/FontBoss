@@ -199,11 +199,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.isFavorite" id="eg3-HT-xc7">
-                                                    <dictionary key="options">
-                                                        <bool key="NSCreatesSortDescriptor" value="NO"/>
-                                                    </dictionary>
-                                                </binding>
+                                                <binding destination="1DU-cj-hkO" name="value" keyPath="arrangedObjects.isFavorite" id="Bdc-qz-tiJ"/>
                                             </connections>
                                         </tableColumn>
                                         <tableColumn editable="NO" width="641" minWidth="100" maxWidth="3.4028234663852886e+38" id="T5e-Qo-FdT">
@@ -339,9 +335,9 @@
                                     <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
                                     <string key="NSNullPlaceholder">0 Fonts</string>
                                     <string key="NSNotApplicablePlaceholder">0 Fonts</string>
-                                    <string key="NSDisplayPattern">%{value1}@ Fonts</string>
-                                    <string key="NSMultipleValuesPlaceholder">0 Fonts</string>
                                     <string key="NSNoSelectionPlaceholder">0 Fonts</string>
+                                    <string key="NSMultipleValuesPlaceholder">0 Fonts</string>
+                                    <string key="NSDisplayPattern">%{value1}@ Fonts</string>
                                 </dictionary>
                             </binding>
                         </connections>
@@ -378,15 +374,23 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="7gx-S3-DtJ" customClass="FBPersistenceManager"/>
         <viewController id="Dg2-GV-MSo" customClass="FBFontListViewController">
             <connections>
                 <outlet property="comboBox" destination="Zfz-ZS-kZv" id="gHu-1U-6Kf"/>
+                <outlet property="fontData" destination="yPw-rc-wMA" id="Z4L-sl-N8K"/>
                 <outlet property="fonts" destination="1DU-cj-hkO" id="bVD-LC-MOV"/>
+                <outlet property="persistenceManager" destination="7gx-S3-DtJ" id="Bnp-tO-Zm6"/>
                 <outlet property="tableView" destination="Sy8-YZ-03L" id="RXA-xx-cTG"/>
                 <outlet property="view" destination="372" id="cGF-Kw-ksF"/>
             </connections>
         </viewController>
-        <arrayController objectClassName="FBFontListItem" selectsInsertedObjects="NO" avoidsEmptySelection="NO" id="1DU-cj-hkO"/>
+        <arrayController objectClassName="FBFontListItem" selectsInsertedObjects="NO" avoidsEmptySelection="NO" id="1DU-cj-hkO" userLabel="Font Array Controller"/>
+        <arrayController mode="entity" entityName="Font" usesLazyFetching="YES" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" id="yPw-rc-wMA" userLabel="Font Data Array Controller">
+            <connections>
+                <binding destination="7gx-S3-DtJ" name="managedObjectContext" keyPath="managedObjectContext" id="kEJ-6W-gUq"/>
+            </connections>
+        </arrayController>
         <userDefaultsController representsSharedInstance="YES" id="FSN-yH-djO"/>
     </objects>
     <resources>
