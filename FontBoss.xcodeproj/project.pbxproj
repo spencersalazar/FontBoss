@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		090AD4B418BDF73E0093E262 /* star-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-off.png"; sourceTree = "<group>"; };
 		090AD4B518BDF73E0093E262 /* star-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-on.png"; sourceTree = "<group>"; };
-		09D26A4F18BC03E800590E59 /* FontBoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D26A4F18BC03E800590E59 /* Big Font List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Font List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D26A5218BC03E800590E59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		09D26A5518BC03E800590E59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		09D26A5618BC03E800590E59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -75,7 +75,7 @@
 		09D26A5018BC03E800590E59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09D26A4F18BC03E800590E59 /* FontBoss.app */,
+				09D26A4F18BC03E800590E59 /* Big Font List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			);
 			name = FontBoss;
 			productName = FontBro;
-			productReference = 09D26A4F18BC03E800590E59 /* FontBoss.app */;
+			productReference = 09D26A4F18BC03E800590E59 /* Big Font List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +322,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
 				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
-				PRODUCT_NAME = FontBoss;
+				PRODUCT_NAME = "Big Font List";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -335,7 +335,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
 				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
-				PRODUCT_NAME = FontBoss;
+				PRODUCT_NAME = "Big Font List";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
