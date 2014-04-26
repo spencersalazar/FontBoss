@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "09D26A4E18BC03E800590E59"
-               BuildableName = "FontBoss.app"
-               BlueprintName = "FontBoss"
-               ReferencedContainer = "container:FontBoss.xcodeproj">
+               BuildableName = "Big Font List.app"
+               BlueprintName = "Big Font List"
+               ReferencedContainer = "container:Big Font List.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "09D26A6F18BC03E800590E59"
                BuildableName = "FontBossTests.xctest"
                BlueprintName = "FontBossTests"
-               ReferencedContainer = "container:FontBoss.xcodeproj">
+               ReferencedContainer = "container:Big Font List.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09D26A4E18BC03E800590E59"
-            BuildableName = "FontBoss.app"
-            BlueprintName = "FontBoss"
-            ReferencedContainer = "container:FontBoss.xcodeproj">
+            BuildableName = "Big Font List.app"
+            BlueprintName = "Big Font List"
+            ReferencedContainer = "container:Big Font List.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09D26A4E18BC03E800590E59"
-            BuildableName = "FontBoss.app"
-            BlueprintName = "FontBoss"
-            ReferencedContainer = "container:FontBoss.xcodeproj">
+            BuildableName = "Big Font List.app"
+            BlueprintName = "Big Font List"
+            ReferencedContainer = "container:Big Font List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09D26A4E18BC03E800590E59"
-            BuildableName = "FontBoss.app"
-            BlueprintName = "FontBoss"
-            ReferencedContainer = "container:FontBoss.xcodeproj">
+            BuildableName = "Big Font List.app"
+            BlueprintName = "Big Font List"
+            ReferencedContainer = "container:Big Font List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

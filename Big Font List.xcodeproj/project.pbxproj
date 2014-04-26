@@ -26,15 +26,16 @@
 /* Begin PBXFileReference section */
 		090AD4B418BDF73E0093E262 /* star-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-off.png"; sourceTree = "<group>"; };
 		090AD4B518BDF73E0093E262 /* star-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-on.png"; sourceTree = "<group>"; };
+		09A83CAF190C703C00A78D59 /* Big Font List.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Big Font List.entitlements"; sourceTree = "<group>"; };
 		09D26A4F18BC03E800590E59 /* Big Font List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Font List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D26A5218BC03E800590E59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		09D26A5518BC03E800590E59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		09D26A5618BC03E800590E59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		09D26A5718BC03E800590E59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		09D26A5A18BC03E800590E59 /* FontBoss-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontBoss-Info.plist"; sourceTree = "<group>"; };
+		09D26A5A18BC03E800590E59 /* Big Font List-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Big Font List-Info.plist"; sourceTree = "<group>"; };
 		09D26A5C18BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09D26A5E18BC03E800590E59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09D26A6018BC03E800590E59 /* FontBoss-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontBoss-Prefix.pch"; sourceTree = "<group>"; };
+		09D26A6018BC03E800590E59 /* Big Font List-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Big Font List-Prefix.pch"; sourceTree = "<group>"; };
 		09D26A6218BC03E800590E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		09D26A6418BC03E800590E59 /* FBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
 		09D26A6518BC03E800590E59 /* FBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +67,7 @@
 		09D26A4618BC03E800590E59 = {
 			isa = PBXGroup;
 			children = (
-				09D26A5818BC03E800590E59 /* FontBoss */,
+				09D26A5818BC03E800590E59 /* Big Font List */,
 				09D26A5118BC03E800590E59 /* Frameworks */,
 				09D26A5018BC03E800590E59 /* Products */,
 			);
@@ -101,9 +102,10 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		09D26A5818BC03E800590E59 /* FontBoss */ = {
+		09D26A5818BC03E800590E59 /* Big Font List */ = {
 			isa = PBXGroup;
 			children = (
+				09A83CAF190C703C00A78D59 /* Big Font List.entitlements */,
 				09D26A6418BC03E800590E59 /* FBAppDelegate.h */,
 				09D26A6518BC03E800590E59 /* FBAppDelegate.m */,
 				09D26A6718BC03E800590E59 /* MainMenu.xib */,
@@ -114,7 +116,7 @@
 				09FF940818BEC480007C14B9 /* FBPersistenceManager.h */,
 				09FF940918BEC480007C14B9 /* FBPersistenceManager.m */,
 			);
-			path = FontBoss;
+			path = "Big Font List";
 			sourceTree = "<group>";
 		};
 		09D26A5918BC03E800590E59 /* Supporting Files */ = {
@@ -123,10 +125,10 @@
 				090AD4B418BDF73E0093E262 /* star-off.png */,
 				090AD4B518BDF73E0093E262 /* star-on.png */,
 				09D26A8D18BC972300590E59 /* icon.png */,
-				09D26A5A18BC03E800590E59 /* FontBoss-Info.plist */,
+				09D26A5A18BC03E800590E59 /* Big Font List-Info.plist */,
 				09D26A5B18BC03E800590E59 /* InfoPlist.strings */,
 				09D26A5E18BC03E800590E59 /* main.m */,
-				09D26A6018BC03E800590E59 /* FontBoss-Prefix.pch */,
+				09D26A6018BC03E800590E59 /* Big Font List-Prefix.pch */,
 				09D26A6118BC03E800590E59 /* Credits.rtf */,
 				09FF93C218BEB6EF007C14B9 /* FontBoss.xcdatamodeld */,
 			);
@@ -136,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09D26A4E18BC03E800590E59 /* FontBoss */ = {
+		09D26A4E18BC03E800590E59 /* Big Font List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBoss" */;
+			buildConfigurationList = 09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "Big Font List" */;
 			buildPhases = (
 				09D26A4B18BC03E800590E59 /* Sources */,
 				09D26A4C18BC03E800590E59 /* Frameworks */,
@@ -148,7 +150,7 @@
 			);
 			dependencies = (
 			);
-			name = FontBoss;
+			name = "Big Font List";
 			productName = FontBro;
 			productReference = 09D26A4F18BC03E800590E59 /* Big Font List.app */;
 			productType = "com.apple.product-type.application";
@@ -165,10 +167,15 @@
 				TargetAttributes = {
 					09D26A4E18BC03E800590E59 = {
 						DevelopmentTeam = 9GU9FHJ3JC;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBoss" */;
+			buildConfigurationList = 09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "Big Font List" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09D26A4E18BC03E800590E59 /* FontBoss */,
+				09D26A4E18BC03E800590E59 /* Big Font List */,
 			);
 		};
 /* End PBXProject section */
@@ -279,7 +286,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -310,7 +316,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -318,10 +323,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Big Font List/Big Font List.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
-				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
+				GCC_PREFIX_HEADER = "Big Font List/Big Font List-Prefix.pch";
+				INFOPLIST_FILE = "Big Font List/Big Font List-Info.plist";
 				PRODUCT_NAME = "Big Font List";
 				WRAPPER_EXTENSION = app;
 			};
@@ -331,10 +338,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Big Font List/Big Font List.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontBoss/FontBoss-Prefix.pch";
-				INFOPLIST_FILE = "FontBoss/FontBoss-Info.plist";
+				GCC_PREFIX_HEADER = "Big Font List/Big Font List-Prefix.pch";
+				INFOPLIST_FILE = "Big Font List/Big Font List-Info.plist";
 				PRODUCT_NAME = "Big Font List";
 				WRAPPER_EXTENSION = app;
 			};
@@ -343,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "FontBoss" */ = {
+		09D26A4A18BC03E800590E59 /* Build configuration list for PBXProject "Big Font List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D26A7E18BC03E800590E59 /* Debug */,
@@ -352,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "FontBoss" */ = {
+		09D26A8018BC03E800590E59 /* Build configuration list for PBXNativeTarget "Big Font List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D26A8118BC03E800590E59 /* Debug */,
