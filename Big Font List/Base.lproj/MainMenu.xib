@@ -149,7 +149,7 @@
         <window title="Big Font List" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="335" y="390" width="720" height="480"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -367,6 +367,9 @@
                 </constraints>
             </view>
             <contentBorderThickness minY="22"/>
+            <connections>
+                <outlet property="delegate" destination="494" id="tvs-kf-x1b"/>
+            </connections>
         </window>
         <customObject id="494" customClass="FBAppDelegate">
             <connections>
