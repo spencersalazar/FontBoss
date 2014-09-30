@@ -218,4 +218,8 @@ CFComparisonResult sortDescriptorsCallback(CTFontDescriptorRef first, CTFontDesc
     return 40 + self.pointSize*(1 + 1.0/6.0);
 }
 
+#pragma mark - NSWindowDelegate
+
+
+
 @end

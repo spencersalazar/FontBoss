@@ -10,7 +10,7 @@
 
 @class FBPersistenceManager;
 
-@interface FBFontListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface FBFontListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate, NSWindowDelegate>
 
 @property NSString *text;
 @property CGFloat pointSize;
